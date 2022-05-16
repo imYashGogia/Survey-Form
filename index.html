@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+    <title>Survey page</title>
+</head>
+
+<body>
+    <!-- heading section -->
+    <div id="main">
+        <div class="head-foot">
+            <h1 id="title">FreeCode Camp Survey Form</h1>
+            <p id="description">Step forward to make our platform more better</p>
+        </div>
+
+        <!-- form section -->
+        <div id="form-section">
+            <form id="survey-form">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input type="text" id="name" class="form-control" placeholder="Enter Name" required>
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label><br>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your Email Id" required>
+                </div>
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age" id="age-label">Age</label><br>
+                    <input type="number" id="age" class="form-control" placeholder="Enter your Age" required min="1"
+                        max="100">
+                </div>
+                <!-- Contact Number -->
+                <div class="form-group">
+                    <label for="number" id="number-label">Contact Number</label><br>
+                    <input type="number" id="number" class="form-control" placeholder="Enter your Contact Number"
+                        required min="0" max="999999999999999999999">
+                </div>
+                <!-- Dropdown menu -->
+                <div class="form-group">
+                    <p>Which Option best describes your current role?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Select Current Role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferno">Prefer not to say</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+                <!-- Radio button-->
+                <div class="form-group">
+                    <p>Would you recommend freeCodeCamp to your friend?</p>
+                    <label><input type="radio" name="user-recommend" value="definitely" class="input-radio"
+                            checked>Definitely</label><br>
+                    <label><input type="radio" name="user-recommend" value="may-be" class="input-radio">May
+                        be</label><br>
+                    <label><input type="radio" name="user-recommend" value="not-sure" class="input-radio">Not
+                        Sure</label>
+                </div>
+                <!-- Checkbox -->
+                <div class="form-group">
+                    <p>What would you like to see improved? <span class="clue">(Check all that apply)</span> </p>
+                    <label><input type="checkbox" name="prefer" value="front-end-projects"
+                            class="input-checkbox">front-end Projects</label><br>
+                    <label><input type="checkbox" name="prefer" value="back-end-projects"
+                            class="input-checkbox">Back-end Projects</label><br>
+                    <label><input type="checkbox" name="prefer" value="data-visualization" class="input-checkbox">Data
+                        Visualization</label><br>
+                    <label><input type="checkbox" name="prefer" value="challenges"
+                            class="input-checkbox">Challenges</label><br>
+                    <label><input type="checkbox" name="prefer" value="open-source"
+                            class="input-checkbox">Open-Source-Community</label><br>
+                    <label><input type="checkbox" name="prefer" value="Gitter" class="input-checkbox">Gitter Help
+                        Room</label><br>
+                    <label><input type="checkbox" name="prefer" value="videos" class="input-checkbox">Videos</label><br>
+                    <label><input type="checkbox" name="prefer" value="city-meetups" class="input-checkbox">City
+                        Meetups</label><br>
+                    <label><input type="checkbox" name="prefer" value="wiki" class="input-checkbox">Wiki</label><br>
+                    <label><input type="checkbox" name="prefer" value="forum" class="input-checkbox">Forum</label><br>
+                    <label><input type="checkbox" name="prefer" value="add-courses" class="input-checkbox">Additional
+                        Courses</label>
+                </div>
+                <!-- Suggestion box -->
+                <div class="form-group">
+                    <p>Any Comments or Suggestions?</p>
+                    <textarea name="comment" id="comment" class="input-textarea"
+                        placeholder="Enter your Comment here..."></textarea>
+                </div>
+                <!-- Submit button -->
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+<!-- footer details -->
+<footer>
+    <div class="head-foot">
+        <p>
+            &copy; Developed by <a href="https://www.linkedin.com/in/imyashgogia"> <b> @Yash Gogia </b> </a>
+        </p>
+        
+    </div>
+    <!-- </div> -->
+
+</footer>
+
+</html>
